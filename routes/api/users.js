@@ -93,7 +93,7 @@ router.get(
   '/current',
   passport.authenticate('jwt', {session: false}),
   (req, res) => {
-    return res.json({msg: 'Sucess'});
+    return res.json(req.user);
   }
 )
 
