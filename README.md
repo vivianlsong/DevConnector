@@ -1,4 +1,4 @@
-# Instagram-like Application called InstaConnect
+# InstaConnect: an Instagram-like Application
 
 Assignment 3a and 3b
 
