@@ -9,9 +9,9 @@ class Landing extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h1 className="display-3 mb-4">Instagram
+                <h1 className="display-3 mb-4">InstaConnect
                 </h1>
-                <p className="lead"> Create an Instagram profile to share posts and photos with friends</p>
+                <p className="lead"> Create an InstaConnect profile to share posts and photos with friends</p>
                 <hr />
                 <Link to="/register" className="btn btn-lg btn-info mr-2">Sign Up</Link>
                 <Link to="/login" className="btn btn-lg btn-light">Login</Link>
