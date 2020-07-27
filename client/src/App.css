@@ -6,9 +6,54 @@ img {
   width: 100%;
 }
 
+h2,h6,p{
+  color:#333333;
+}
+.bg-dark {
+    background-color:#17a2b8 !important;
+}
+.bg-grey{
+  background-color:#cccccc !important;
+}
+
+.image{
+  background-image: url('./img/landing-page.jpg');
+  background-repeat: no-repeat;
+  height:600px;
+  
+}
+.lead1{
+  text-align:center;
+  font-size:medium;
+  color:#666666;
+}
+.lead{
+  color:#333333; 
+}
+.footer{
+  position:fixed;
+  width:100%;
+}
+.btn-info {
+    color: #17a2b8;
+    background-color:#fafafa;
+    border-color:#cccccc;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: .3rem;
+}
+input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].btn-block {
+    width:100%;
+    
+    background-color:  #17a2b8;
+    color:#ffffff;
+
+}
 .landing {
   position: relative;
-  background: url('./img/Instagram.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -21,14 +66,21 @@ img {
 }
 
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color:#fafafa;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+.landing .col-md-6{
+  float:right
+}
+.landing .col-md-4{
+  
+  float:left;
 
+}
 .card-form {
   opacity: 0.9;
 }
