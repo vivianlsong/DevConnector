@@ -1,7 +1,7 @@
-# Instagram Application
+# Instagram-like Application called InstaConnect
 
-Assignment 3a
+Assignment 3a and 3b
 
-Team 4: Archna Sharda, Kruthi Sangana, and Vivian Song
+Team 4: Archna Sharda and Vivian Song
 
-Description: Built API and models for an Instagram application using React
+Description: 3a) Built API and models for an Instagram-like application, InstaConnect, using React. 3b) Build the React frontend for the InstaConnect application
