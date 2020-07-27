@@ -6,4 +6,4 @@ Team 4: Archna Sharda and Vivian Song
 
 Description: 
 3a) Built API and models for an Instagram-like application, InstaConnect, using React. 
-3b) Build the React frontend for the InstaConnect application
+3b) Built the React frontend for the InstaConnect application
