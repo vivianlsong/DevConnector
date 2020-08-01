@@ -30,7 +30,7 @@ h2,h6,p{
   color:#333333; 
 }
 .footer{
-  position:fixed;
+  position: absolute;
   width:100%;
 }
 .btn-info {
@@ -46,14 +46,12 @@ h2,h6,p{
 }
 input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].btn-block {
     width:100%;
-    
     background-color:  #17a2b8;
     color:#ffffff;
 
 }
 .landing {
   position: relative;
-  background-size: cover;
   background-position: center;
   height: 100vh;
   margin-top: -24px;
@@ -61,12 +59,12 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .landing-inner {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .dark-overlay {
   background-color:#fafafa;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -76,9 +74,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   float:right
 }
 .landing .col-md-4{
-  
   float:left;
-
 }
 .card-form {
   opacity: 0.9;
