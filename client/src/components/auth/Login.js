@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import classnames from 'classnames';
 import {connect} from 'react-redux';
 import {loginUser} from '../../actions/authActions';
+import PropTypes from "prop-types";
+import TextFieldGroup from "../common/TextFieldGroup";
 
 class Login extends Component {
   constructor() {
@@ -58,34 +59,24 @@ class Login extends Component {
               <p className="lead text-center">Sign in to your InstaConnect account</p>
               <form onSubmit={this.onSubmit}>
                 <div className="form-group">
-                  <input 
-                  type="email" 
-                  className={classnames("form-control form-control-lg", {
-                    'is-invalid': errors.email
-                  })} 
-                  placeholder="Email Address" 
-                  name="email"
-                  value={this.state.email} 
-                  onChange={this.onChange}
+                  <TextFieldGroup
+                    placeholder="Email Address"
+                    name="email"
+                    type="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    error={errors.email}
                   />
-                  {errors.email && (
-                    <div className="invalid-feedback">{errors.email}</div>
-                  )}
                 </div>
                 <div className="form-group">
-                  <input 
-                  type="password" 
-                  className={classnames("form-control form-control-lg", {
-                    'is-invalid': errors.password
-                  })} 
-                  placeholder="Password" 
-                  name="password"
-                  value={this.state.password} 
-                  onChange={this.onChange}
+                  <TextFieldGroup
+                    placeholder="Password"
+                    name="password"
+                    type="password"
+                    error={errors.password}
+                    value={this.state.password}
+                    onChange={this.onChange}
                   />
-                  {errors.password && (
-                    <div className="invalid-feedback">{errors.password}</div>
-                  )}
                 </div>
                 <input 
                 type="submit" 
@@ -98,6 +89,12 @@ class Login extends Component {
     )
   }
 }
+
+Login.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired,
+};
 
 const mapStateToProps = (state) => ({
   auth: state.auth,

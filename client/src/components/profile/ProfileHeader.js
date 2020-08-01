@@ -28,6 +28,7 @@ class ProfileHeader extends Component {
                     className="text-white p-2"
                     href={profile.website}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fas fa-blog fa-2x" />
                   </a>

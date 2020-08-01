@@ -21,7 +21,7 @@ import jwt_decode from 'jwt-decode';
 import PrivateRoute from "./components/common/PrivateRoute";
 import { SET_CURRENT_USER } from './actions/types';
 import { logoutUser } from './actions/authActions';
-import { clearCurrentProfile } from "./actions/profileActions";
+//import { clearCurrentProfile } from "./actions/profileActions";
 
 // Check for token
 if (localStorage.jwtToken) {
