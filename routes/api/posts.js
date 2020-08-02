@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router(); // using router insead of app because we just want to look at the router part of express in server.js instead of all. Here router is a variabe name which we can give any.
-const mongoose = require ('mongoose');
 const passport = require ('passport');
 
 //Load Post Model
@@ -11,6 +10,7 @@ const Profile = require("../../models/Profile");
 
 //Load Validation
 const validatePostInput = require("../../validation/post");
+
 // @route   GET api/posts
 // @desc    Get posts
 // @access  Public
@@ -31,6 +31,7 @@ router.get("/:id", (req, res) => {
       res.status(404).json({ nopostfound: "No post found with this ID" })
     );
 });
+
 
 // @route   POST api/posts
 // @desc    Create post

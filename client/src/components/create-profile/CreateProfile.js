@@ -13,6 +13,7 @@ class CreateProfile extends Component {
       handle: '',
       bio: '',
       location: '',
+      email: '',
       website: '',
       errors: {}
     };
@@ -34,6 +35,7 @@ class CreateProfile extends Component {
       handle: this.state.handle,
       bio: this.state.bio,
       location: this.state.location,
+      email: this.state.email,
       website: this.state.website      
     };
 
@@ -81,6 +83,14 @@ class CreateProfile extends Component {
                   onChange={this.onChange}
                   error={errors.location}
                   info="City, state (e.g. Los Angeles,CA)"
+                />
+                <TextFieldGroup
+                  placeholder="Email"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.onChange}
+                  error={errors.email}
+                  info="What's your email?"
                 />
                 <TextFieldGroup
                   placeholder="Website"
