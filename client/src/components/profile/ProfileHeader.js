@@ -21,18 +21,6 @@ class ProfileHeader extends Component {
             <div className="text-center">
               <h1 className="display-4 text-center">{profile.user.name}</h1>
               {isEmpty(profile.location) ? null : <p>{profile.location}</p>}
-              <p>
-                {isEmpty(profile.website) ? null : (
-                  <a
-                    className="text-white p-2"
-                    href={profile.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-youtube fa-2x" />
-                  </a>
-                )}
-              </p>
             </div>
           </div>
         </div>
