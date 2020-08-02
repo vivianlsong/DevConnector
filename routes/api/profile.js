@@ -115,9 +115,6 @@ router.post(
     if (req.body.location) profileFields.location = req.body.location;
     if (req.body.bio) profileFields.bio = req.body.bio;
 
-    // Social
-    profileFields.social = {};
-    if (req.body.website) profileFields.social.website = req.body.website;
 
     Profile.findOne({ user: req.user.id }).then((profile) => {
       if (profile) {

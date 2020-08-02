@@ -30,7 +30,7 @@ class ProfileHeader extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fas fa-blog fa-2x" />
+                    <i className="fab fa-youtube fa-2x" />
                   </a>
                 )}
               </p>

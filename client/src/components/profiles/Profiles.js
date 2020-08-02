@@ -35,7 +35,9 @@ class Profiles extends Component {
               <p className="lead text-center">
                 Browse InstaConnect Profiles
               </p>
-              {profileItems}
+                <div>
+                  {profileItems}
+                </div>
             </div>
           </div>
         </div>
