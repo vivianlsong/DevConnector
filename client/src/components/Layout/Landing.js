@@ -22,7 +22,7 @@ class Landing extends Component {
                           <p className="lead text-center">
                             Sign in to your InstaConnect account
                           </p>
-                          <form action="dashboard.html">
+                          <form action="myprofile.html">
                             <div className="form-group">
                               <input
                                 type="email"

@@ -13,6 +13,18 @@ class ProfileAbout extends Component {
       <div className="row">
         <div className="col-md-12">
           <div className="card card-body bg-light mb-3">
+              <p>
+                {isEmpty(profile.website) ? null : (
+                  <a
+                    className="text-info p-2"
+                    href={profile.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-youtube fa-2x" />
+                  </a>
+                )}
+              </p>
             <h3 className="text-center text-info">{firstName}'s Bio</h3>
             <p className="lead">
               {isEmpty(profile.bio) ? (

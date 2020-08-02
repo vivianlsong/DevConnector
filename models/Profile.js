@@ -17,9 +17,6 @@ const ProfileSchema = new Schema({
   location: {
       type: String
   },
-  email: {
-    type: String
-  },
   website: {
     type: String
   }
