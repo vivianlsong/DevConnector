@@ -16,7 +16,7 @@ class ProfileAbout extends Component {
               <p>
                 {isEmpty(profile.website) ? null : (
                   <a
-                    className="text-info p-2"
+                    className="text-danger p-2"
                     href={profile.website}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -25,7 +25,7 @@ class ProfileAbout extends Component {
                   </a>
                 )}
               </p>
-            <h3 className="text-center text-info">{firstName}'s Bio</h3>
+            <h3 className="text-center">{firstName}'s Bio</h3>
             <p className="lead">
               {isEmpty(profile.bio) ? (
                 <span>{firstName} does not have a bio</span>

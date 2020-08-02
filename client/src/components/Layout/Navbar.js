@@ -16,12 +16,12 @@ class Navbar extends Component {
       <li className="nav-item">
         <Link className="nav-link" to="/register">
           Sign Up
-                </Link>
+        </Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/login">
           Login
-                </Link>
+        </Link>
       </li>
     </ul>);
 
