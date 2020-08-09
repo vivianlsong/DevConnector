@@ -21,7 +21,41 @@ class ProfileHeader extends Component {
             <div className="text-center">
               <h1 className="display-4 text-center">{profile.user.name}</h1>
               {isEmpty(profile.location) ? null : <p>{profile.location}</p>}
-              {isEmpty(profile.email) ? null : <p>{profile.email}</p>}
+              <p>
+                {isEmpty(profile.website) ? null : (
+                  <a
+                    className="text-white p-2"
+                    href={profile.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-globe fa-2x" />
+                  </a>
+                )}
+              </p>
+              <p>
+                {isEmpty(profile.email) ? null : (
+                  <a
+                    className="text-white p-2"
+                    href="mailto:{profile.email}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  > {profile.email}&nbsp;&nbsp;
+                    <i className="far fa-envelope fa-2x" />
+                  </a>
+                )}
+              </p>
+              <ul className="header-ul">
+                <li>
+                  <strong>50</strong> posts
+                </li>
+                <li>
+                  <strong>300k</strong> followers
+                </li>
+                <li>
+                  <strong>180</strong> following
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -14,6 +14,10 @@ module.exports = function validateProfileInput(data) {
     errors.handle = "Profile handle is required";
   }
 
+  if (isEmpty(data.email)) {
+    errors.email = 'Email field is required';
+  }
+
   if (!isEmpty(data.website)) {
     if (!Validator.isURL(data.website)) {
       errors.website = "Not a valid URL";

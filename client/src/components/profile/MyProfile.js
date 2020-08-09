@@ -36,15 +36,17 @@ class MyProfile extends Component {
         myprofileContent = (
           <div>
             <ProfileActions />
-            <ProfileHeader profile={profile} />
-            <ProfileAbout profile={profile} />
-            <div style={{ marginBottom: '30px' }} />
+            <br />
             <button
               onClick={this.onDeleteClick.bind(this)}
               className="btn btn-danger"
             >
               Delete My Account
             </button>
+            <hr />
+            <ProfileHeader profile={profile} />
+            <ProfileAbout profile={profile} />
+            <div style={{ marginBottom: '30px' }} />
           </div>
         );
       } else {
